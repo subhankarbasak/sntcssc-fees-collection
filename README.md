@@ -35,12 +35,23 @@ cache the configuration : php artisan config:cache
     php artisan migrate --seed
     php artisan migrate:refresh --seed
     php artisan migrate:fresh --seed
+
+    or
+    php artisan db:seed --class=StudentSeeder
     ```
 
     ```
     To linked storage
     php artisan storage:link
     ```
+
+- Dependency:
+    - maatwebsite/excel
+    - php artisan config:publish maatwebsite/excel
+    or
+    - php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider" --tag=config
+
+
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>

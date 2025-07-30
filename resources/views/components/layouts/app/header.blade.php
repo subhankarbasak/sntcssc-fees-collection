@@ -120,5 +120,7 @@
         {{ $slot }}
 
         @fluxScripts
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs-mask@0.3.0/dist/mask.min.js" defer></script>
     </body>
 </html>

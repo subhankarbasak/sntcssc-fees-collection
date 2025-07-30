@@ -43,6 +43,11 @@ class Login extends Component
         RateLimiter::clear($this->throttleKey());
         Session::regenerate();
 
+        // flash()->success('Your message has been sent!', 'Thank you');
+        // flash()->success('User logged In successfully!');
+
+        flash()->success('Your account logged in successfully!', ['title' => 'Welcome!']);
+
         $this->redirectIntended(default: route('dashboard', absolute: false), navigate: true);
     }
 

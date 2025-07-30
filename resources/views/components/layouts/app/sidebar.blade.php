@@ -17,6 +17,12 @@
                 </flux:navlist.group>
             </flux:navlist>
 
+            <flux:navlist variant="outline">
+                <flux:navlist.group :heading="__('Students Management')" class="grid">
+                    <flux:navlist.item icon="users" :href="route('students')" :current="request()->routeIs('students')" wire:navigate>{{ __('Students') }}</flux:navlist.item>
+                </flux:navlist.group>
+            </flux:navlist>
+
             <flux:spacer />
 
             <flux:navlist variant="outline">
