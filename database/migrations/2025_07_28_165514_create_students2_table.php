@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('students', function (Blueprint $table) {
+        Schema::create('students2', function (Blueprint $table) {
             $table->id();
             $table->string('application_number')->unique();
             $table->string('admission_test_roll_no')->unique()->nullable();
